@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -Wextra -pedantic  CMakeFiles/duvidas_duvidas.dir/src/main.cpp.o CMakeFiles/common.dir/src/main.cpp.o -o duvidas_duvidas 

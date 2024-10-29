@@ -1,0 +1,3 @@
+- Nao da para usar std::vector<classe> com classe abstrata. Tem que fazer um vetor de ponteiros std::vector<classe *>
+- TAD tempalte arg deduction
+- ADL argument dependent look up
