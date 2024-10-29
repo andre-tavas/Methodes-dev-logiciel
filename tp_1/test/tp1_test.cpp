@@ -113,7 +113,7 @@ TEST_CASE ( "TP1_Cartesien::Affichage" ) {
 }
 
 //----------------------------------------------------------------------------------------------- 11
-/*TEST_CASE ( "TP1_Point::AffichageVirtuel" ) {
+TEST_CASE ( "TP1_Point::AffichageVirtuel" ) {
  Polaire p(12.0,24.0);
  Cartesien c(13.0,25.0);
 
@@ -128,7 +128,7 @@ TEST_CASE ( "TP1_Cartesien::Affichage" ) {
 
  REQUIRE ( flux1.str() == "(a=12;d=24)" );
  REQUIRE ( flux2.str() == "(x=13;y=25)" );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 12
 /*TEST_CASE ( "TP1_Point::OperateurFlux" ) {
