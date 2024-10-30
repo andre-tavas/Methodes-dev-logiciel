@@ -21,8 +21,8 @@ class ExceptionChaine : public std::exception{
 
 template <typename T>
 ExceptionChaine::ExceptionChaine(const T& t)
-    : type(typeid(t).name()),
-      message("Conversion en chaine impossible pour '"+demangle(type)+"'")
+    : type(demangle(typeid(t).name())),
+      message("Conversion en chaine impossible pour '"+type+"'")
 {};
 
 

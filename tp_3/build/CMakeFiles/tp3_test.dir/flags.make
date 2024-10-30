@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/local.isima.fr/antavaresg/ZZ3/C++/tp_3/src
+CXX_INCLUDES = -I/home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/src
 
 CXX_FLAGS = -Wall -Wextra -pedantic  -std=gnu++17
 

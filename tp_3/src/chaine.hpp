@@ -11,20 +11,20 @@ std::string chaine(const T obj){
 };
 
 template <>
-std::string chaine(std::string obj){
+std::string chaine<std::string>(std::string obj){
     return obj;
 };
 
 template <>
-std::string chaine(const int & obj){
+std::string chaine<int>(const int obj){
     std::stringstream ss;
     ss << obj;
     return ss.str();
 };
 
 template <>
-std::string chaine(double obj){
-    return std::tostring(obj);
+std::string chaine<double>(double obj){
+    return std::to_string(obj);
 };
 
 #endif
