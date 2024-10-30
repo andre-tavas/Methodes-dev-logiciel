@@ -14,11 +14,9 @@ class Nuage{
 
     std::vector<T> v;
 
-
     public:
 
-        Nuage(Point* pontos);
-        // ~Nuage();
+        Nuage();
         void ajouter(const T& p);
         unsigned int size() const;
         using const_iterator = typename std::vector<T>::const_iterator;
@@ -54,38 +52,46 @@ typename Nuage<T>::const_iterator Nuage<T>::end() const{
 template <typename T>
 T barycentre_v1(const Nuage<T> n){
 
+    if(! n.size()){
+        return T(.0,.0);
+    }
+
     double x_sum = 0;
     double y_sum = 0;
 
-    for(typename Nuage<T>::const_iterator it = n.begin(); it != n.end(); it++){
-
-        // const Cartesien c = dynamic_cast<const Cartesien>(*it);
-
-/*         Cartesien c_(.0,.0);
-        (*it).convertir(c_); 
+    for(const T& point : n){
+        Cartesien c_;
+        point.convertir(c_);
         x_sum += c_.getX();
-        y_sum += c_.getY();*/
-
-        x_sum += it->getAngle();
-        y_sum += it->getDistance();
-
-        it->afficher(std::cout);
+        y_sum += c_.getY();
     }
 
-    double x = 0;
-    double y = 0;
+    double x = x_sum / n.size();
+    double y = y_sum / n.size();
+    T result(Cartesien(x, y));
 
-    if(n.size()){
-        x = x_sum / n.size();
-        y = y_sum / n.size();
+    return result;
+}
+
+template <>
+Polaire barycentre_v1(const Nuage<Polaire> n){
+
+    if(! n.size()){
+        return Polaire(.0,.0);
     }
+
+    double angle_sum = 0;
+    double distance_sum = 0;
+
+    for(const Polaire& point : n){
+        angle_sum += point.getAngle();
+        distance_sum += point.getDistance();
+    }
+
+    double angle = angle_sum / n.size();
+    double distance = distance_sum / n.size();
     
-    T result(x, y);
-
-/*     Cartesien c(0, 0);
-    c.setX(x);
-    c.setY(y);
-    c.convertir(result); */
+    Polaire result(angle, distance);
 
     return result;
 }
