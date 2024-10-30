@@ -96,6 +96,30 @@ Polaire barycentre_v1(const Nuage<Polaire> n){
     return result;
 }
 
+template <typename T, template <typename> class Container>
+T barycentre_v2(const Container<T> n){
+
+    if(! n.size()){
+        return T(.0,.0);
+    }
+
+    double x_sum = 0;
+    double y_sum = 0;
+
+    for(const T& point : n){
+        Cartesien c_;
+        point.convertir(c_);
+        x_sum += c_.getX();
+        y_sum += c_.getY();
+    }
+
+    double x = x_sum / n.size();
+    double y = y_sum / n.size();
+    T result(Cartesien(x, y));
+
+    return result;
+}
+
 /* template <typename T>
 class barycentre_functor {
 
