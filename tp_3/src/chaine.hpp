@@ -10,6 +10,12 @@ std::string chaine(const T obj){
     throw ExceptionChaine(obj);
 };
 
+template <typename T, typename ... OtherArgs>
+std::string chaine(T a, OtherArgs... rest){
+    chaine(a) + " " + chaine(rest...);
+    return chaine(a) + " " + chaine(rest...);; 
+};
+
 template <>
 std::string chaine<std::string>(std::string obj){
     return obj;
