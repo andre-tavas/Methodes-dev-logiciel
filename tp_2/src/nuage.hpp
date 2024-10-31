@@ -19,6 +19,9 @@ class Nuage{
         Nuage();
         void ajouter(const T& p);
         unsigned int size() const;
+        /* Precisa do typename a seguir porque nao daria para saber se 
+        consti_iterator e um atributo ou um tipo interno de std::vector<T>.
+        Para especificar que e um tipo interno coloca o typename (equivalente a colocar class) */
         using const_iterator = typename std::vector<T>::const_iterator;
         const_iterator begin() const;
         const_iterator end() const;
