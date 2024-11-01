@@ -5,12 +5,15 @@
 #include <sstream>
 #include "exception.hpp"
 
+// PROTOTYPES
+template <typename T, typename ... OtherArgs> std::string chaine(const T& a, const OtherArgs... rest);
+template <typename... ARGS> std::string chaine(const std::tuple<ARGS...>& t);
+
+
 template <typename T>
 std::string chaine(const T & obj){
     throw ExceptionChaine(obj);
 };
-
-
 
 template <typename T, typename ... OtherArgs>
 std::string chaine(const T& a, const OtherArgs... rest){
