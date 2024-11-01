@@ -134,8 +134,8 @@ CMakeFiles/test.dir/clean:
 # Target rules for target CMakeFiles/tp3_test.dir
 
 # All Build rule for target.
-CMakeFiles/tp3_test.dir/all: CMakeFiles/common.dir/all
 CMakeFiles/tp3_test.dir/all: CMakeFiles/test.dir/all
+CMakeFiles/tp3_test.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp3_test.dir/build.make CMakeFiles/tp3_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp3_test.dir/build.make CMakeFiles/tp3_test.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/build/CMakeFiles --progress-num=3,4 "Built target tp3_test"

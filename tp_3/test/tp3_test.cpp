@@ -7,7 +7,8 @@
 
 #include <chaine.hpp>
 //#include <cosinus.hpp>
-//#include <exponentielle.hpp>
+// #include <exponentielle.hpp>
+#include <factorielle.hpp>
 
 // Tests //-----------------------------------------------------------------------------------------
 
@@ -199,13 +200,13 @@ TEST_CASE ( "TP3_Chaine::ConversionCompositionTuples" ) {
 }
 
 //------------------------------------------------------------------------------------------------ 7
-/*TEST_CASE ( "TP3_Metaprog::Factorielle" ) {
+TEST_CASE ( "TP3_Metaprog::Factorielle" ) {
  unsigned long f1 = Factorielle<1>::valeur;
  unsigned long f5 = Factorielle<5>::valeur;
 
  REQUIRE ( f1 == 1u );
  REQUIRE ( f5 == 5u*4u*3u*2u );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 8
 /*TEST_CASE ( "TP3_Metaprog::Puissance" ) {
