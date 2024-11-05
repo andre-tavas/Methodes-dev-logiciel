@@ -222,4 +222,7 @@ CMakeFiles/tp3_test.dir/test/tp3_test.cpp.o: \
  /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/src/chaine.hpp \
  /usr/include/c++/12/sstream /usr/include/c++/12/bits/sstream.tcc \
  /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/src/exception.hpp \
- /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/src/factorielle.hpp
+ /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/src/cosinus.hpp \
+ /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/src/factorielle.hpp \
+ /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/src/exponentielle.hpp \
+ /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/src/puissance.hpp

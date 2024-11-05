@@ -275,8 +275,13 @@ CMakeFiles/tp3_test.dir/test/tp3_test.cpp.o: /home/local.isima.fr/antavaresg/sha
   /usr/include/c++/12/sstream \
   /usr/include/c++/12/bits/sstream.tcc \
   /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/src/exception.hpp \
-  /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/src/factorielle.hpp
+  /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/src/cosinus.hpp \
+  /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/src/factorielle.hpp \
+  /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/src/exponentielle.hpp \
+  /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/src/puissance.hpp
 
+
+/home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/src/exponentielle.hpp:
 
 /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/src/factorielle.hpp:
 
@@ -363,6 +368,8 @@ CMakeFiles/tp3_test.dir/test/tp3_test.cpp.o: /home/local.isima.fr/antavaresg/sha
 /usr/include/c++/12/bits/uses_allocator.h:
 
 /usr/include/c++/12/bits/stl_iterator_base_types.h:
+
+/home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/src/puissance.hpp:
 
 /usr/include/c++/12/bits/atomic_base.h:
 
@@ -489,6 +496,8 @@ CMakeFiles/tp3_test.dir/test/tp3_test.cpp.o: /home/local.isima.fr/antavaresg/sha
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/c++/12/type_traits:
+
+/home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/src/cosinus.hpp:
 
 /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_3/test/catch.hpp:
 
