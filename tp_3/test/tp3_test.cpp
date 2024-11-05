@@ -215,11 +215,11 @@ TEST_CASE ( "TP3_Metaprog::Puissance" ) {
 }
 
 //------------------------------------------------------------------------------------------------ 9
-/*TEST_CASE ( "TP3_Metaprog::Exponentielle" ) {
+TEST_CASE ( "TP3_Metaprog::Exponentielle" ) {
  REQUIRE ( Exponentielle<4>::valeur(0.0) == Approx(std::exp(0.0)).epsilon(1e-3) );
  REQUIRE ( Exponentielle<12>::valeur(-2.5) == Approx(std::exp(-2.5)).epsilon(1e-3) );
  REQUIRE ( Exponentielle<7>::valeur(1.4) == Approx(std::exp(1.4)).epsilon(1e-3) );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 10
 /*TEST_CASE ( "TP3_Metaprog::Cosinus" ) {

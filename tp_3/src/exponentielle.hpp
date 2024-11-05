@@ -4,23 +4,26 @@
 #include "factorielle.hpp"
 #include "puissance.hpp"
 
-// template <int N>
-// class Exponentielle{
+template <int N>
+class Exponentielle{
 
-//     public:
-//         double valeur(double x){
-           
-//             double sum = 0;
-            
-//             for (int k = 0; k <= N; ++n){
-//                 sum += Puissance<k>::valeur(x) / Factorielle<k>::valeur;
-//             }
+    public:
+        static double valeur(double x) {
+            return Puissance<N>::valeur(x) / Factorielle<N>::valeur + Exponentielle<N-1>::valeur(x);
+        };
 
-//             return sum;
-//         };
+};
 
 
-// };
+template <>
+class Exponentielle<0>{
+
+    public:
+        static double valeur(double ) {
+            return 1;
+        };
+
+};
 
 // Exponentielle<5>(1.5) = sum([1.5^k /Factorielle<k> for k in range(5)])
 #endif
