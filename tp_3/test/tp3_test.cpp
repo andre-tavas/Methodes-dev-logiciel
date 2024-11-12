@@ -222,17 +222,17 @@ TEST_CASE ( "TP3_Metaprog::Exponentielle" ) {
 }
 
 //----------------------------------------------------------------------------------------------- 10
-/*TEST_CASE ( "TP3_Metaprog::Cosinus" ) {
+TEST_CASE ( "TP3_Metaprog::Cosinus" ) {
  REQUIRE ( Cosinus<1>::valeur(0.0) == Approx(std::cos(0.0)).epsilon(1e-3) );
  REQUIRE ( Cosinus<4>::valeur(-2.0) == Approx(std::cos(-2.0)).epsilon(1e-3) );
  REQUIRE ( Cosinus<3>::valeur(1.0) == Approx(std::cos(1.0)).epsilon(1e-3) );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 11
-/*TEST_CASE ( "TP3_Metaprog::Sinus" ) {
+TEST_CASE ( "TP3_Metaprog::Sinus" ) {
  REQUIRE ( Sinus<3>::valeur(0.0) == Approx(std::sin(0.0)).epsilon(1e-3) );
  REQUIRE ( Sinus<5>::valeur(-2.0) == Approx(std::sin(-2.0)).epsilon(1e-3) );
  REQUIRE ( Sinus<4>::valeur(1.0) == Approx(std::sin(1.0)).epsilon(1e-3) );
-}*/
+}
 
 // Fin //-------------------------------------------------------------------------------------------
