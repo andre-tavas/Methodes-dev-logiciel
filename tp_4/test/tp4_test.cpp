@@ -42,13 +42,13 @@ TEST_CASE ( "TP4_Carte::CarteInterface" ) {
 }
 
 //------------------------------------------------------------------------------------------------ 3
-/*TEST_CASE ( "TP4_Carte::UsineInterface" ) {
+TEST_CASE ( "TP4_Carte::UsineInterface" ) {
  // Contructeur de copie existe ?
  REQUIRE ( std::is_copy_constructible<UsineCarte>::value == false );
 
  // Operateur d'affectation par copie existe ?
  REQUIRE ( std::is_copy_assignable<UsineCarte>::value == false );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 4
 /*TEST_CASE ( "TP4_Carte::UsineN" ) {
