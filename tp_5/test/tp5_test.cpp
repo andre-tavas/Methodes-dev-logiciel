@@ -46,14 +46,14 @@ TEST_CASE ( "TP5_Valeur::AccesseursConstants" ) {
 }
 
 //------------------------------------------------------------------------------------------------ 5
-/*TEST_CASE ( "TP5_Echantillon::Constructeur" ) {
+TEST_CASE ( "TP5_Echantillon::Constructeur" ) {
  Echantillon e;
 
  REQUIRE ( e.getTaille() == 0u );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 6
-/*TEST_CASE ( "TP5_Echantillon::Ajout" ) {
+TEST_CASE ( "TP5_Echantillon::Ajout" ) {
  Echantillon e;
 
  double v[] = { 5.0, 10.0, 15.0, 20.0 };
@@ -61,7 +61,7 @@ TEST_CASE ( "TP5_Valeur::AccesseursConstants" ) {
  for (unsigned i = 0; i<4; ++i) e.ajouter(v[i]);
 
  REQUIRE ( e.getTaille() == 4u );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 7
 /*TEST_CASE ( "TP5_Echantillon::MinMax" ) {
