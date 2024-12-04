@@ -420,6 +420,11 @@ CMakeFiles/common.dir/src/paquet.cpp.o
  /usr/include/c++/12/bits/stl_bvector.h
  /usr/include/c++/12/bits/vector.tcc
 
+CMakeFiles/common.dir/src/ressource.cpp.o
+ /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_4/src/ressource.cpp
+ /usr/include/stdc-predef.h
+ /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_4/src/ressource.hpp
+
 CMakeFiles/common.dir/src/usine.cpp.o
  /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_4/src/usine.cpp
  /usr/include/stdc-predef.h

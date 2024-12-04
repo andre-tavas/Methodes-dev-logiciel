@@ -418,6 +418,10 @@ CMakeFiles/common.dir/src/paquet.cpp.o: /home/local.isima.fr/antavaresg/shared/Z
   /usr/include/c++/12/bits/stl_bvector.h \
   /usr/include/c++/12/bits/vector.tcc
 
+CMakeFiles/common.dir/src/ressource.cpp.o: /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_4/src/ressource.cpp \
+  /usr/include/stdc-predef.h \
+  /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_4/src/ressource.hpp
+
 CMakeFiles/common.dir/src/usine.cpp.o: /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_4/src/usine.cpp \
   /usr/include/stdc-predef.h \
   /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_4/src/usine.hpp \
@@ -695,6 +699,8 @@ CMakeFiles/common.dir/src/usine.cpp.o: /home/local.isima.fr/antavaresg/shared/ZZ
 
 /usr/include/ctype.h:
 
+/home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_4/src/ressource.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/c++/12/bits/localefwd.h:
@@ -902,6 +908,8 @@ CMakeFiles/common.dir/src/usine.cpp.o: /home/local.isima.fr/antavaresg/shared/ZZ
 /usr/include/c++/12/bits/utility.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_4/src/ressource.cpp:
 
 /usr/include/c++/12/bits/istream.tcc:
 
