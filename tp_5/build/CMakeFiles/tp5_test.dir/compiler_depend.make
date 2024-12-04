@@ -268,6 +268,8 @@ CMakeFiles/tp5_test.dir/test/tp5_test.cpp.o: /home/local.isima.fr/antavaresg/sha
   /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_5/src/histogramme.hpp \
   /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_5/src/echantillon.hpp \
   /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_5/src/valeur.hpp \
+  /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_5/src/comparateur.hpp \
+  /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_5/src/classe.hpp \
   /usr/include/c++/12/set \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/bits/stl_set.h \
@@ -283,6 +285,8 @@ CMakeFiles/tp5_test.dir/test/tp5_test.cpp.o: /home/local.isima.fr/antavaresg/sha
 /usr/include/c++/12/bits/stl_multiset.h:
 
 /usr/include/c++/12/bits/stl_tree.h:
+
+/home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_5/src/classe.hpp:
 
 /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_5/src/valeur.hpp:
 

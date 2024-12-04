@@ -248,7 +248,7 @@ TEST_CASE ( "TP5_Histogramme::FoncteurGreater" ) {
 }
 
 //----------------------------------------------------------------------------------------------- 16
-/*TEST_CASE ( "TP5_Histogramme::ComparateurQuantite" ) {
+TEST_CASE ( "TP5_Histogramme::ComparateurQuantite" ) {
  using histo_t = Histogramme<ComparateurQuantite>;
 
  double v[] = { 7.0, 9.0, 8.0, 5.0, 10.0, 14.0, 13.0, 6.0, 5.5, 13.5 };
@@ -271,7 +271,7 @@ TEST_CASE ( "TP5_Histogramme::FoncteurGreater" ) {
   REQUIRE ( c.getQuantite() == quantites[i] );
   ++i;
  }
-}*/
+}
 
 //------------------------------------------------------------------------------------------------17
 /*TEST_CASE ( "TP5_Histogramme::Conversion" ) {
