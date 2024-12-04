@@ -5,6 +5,7 @@
 #include "valeur.hpp"
 #include <set>
 #include <iostream>
+#include <functional>
 
 class Classe{
     private:
@@ -38,15 +39,16 @@ bool operator<(const Classe& a, const Classe& b){
 //     return a.getBorneInf() == b.getBorneInf() && a.getBorneSup() == b.getBorneSup();
 // }
 
-class Histo{
+template <typename COMPARATEUR = std::less<Classe>>
+class Histogramme{
     private:
         double lb;
         double ub;
         double interval;
-        std::set<Classe> classes;
+        std::set<Classe, COMPARATEUR> classes;
 
     public:
-        Histo(double l, double u, unsigned n) : lb(l), ub(u) {
+        Histogramme(double l, double u, unsigned n) : lb(l), ub(u) {
             interval = (ub-lb)/n;
             for (unsigned i = 0; i < n; ++i){
                 classes.insert(Classe(lb + interval*i, lb + interval*i + interval));
