@@ -39,6 +39,20 @@ class Histo{
         }
 
         std::vector<Classe> getClasses() const { return classes; }
+
+        void ajouter(const Valeur& v) {
+            // percorre as classes e bota naquela que 
+            for (Classe& classe : classes){
+                if (v.getNombre() < classe.getBorneSup()){
+                    classe.ajouter();
+                    break;
+                } 
+            }
+        }
+
+        void ajouter(const Echantillon& e) {
+            for(unsigned i = 0; i < e.getTaille(); i++) ajouter(e.getValeur(i));
+        }
 };
 
 

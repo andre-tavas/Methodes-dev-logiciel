@@ -11,7 +11,6 @@ class Echantillon{
     private:
         std::vector<Valeur> vector;
         
-
     public:
         Echantillon() {}
         
