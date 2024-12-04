@@ -1,5 +1,8 @@
 #include "carte.hpp"
 
-Carte::Carte(int nb) : number(nb) {}
+Carte::Carte(unsigned nb) : number(nb) {
+    std::cout << "carte constructor " << number << std::endl;
+    }
 
-unsigned Carte::getValeur() const { return number; }
+unsigned Carte::getValeur() const { 
+    return number; }

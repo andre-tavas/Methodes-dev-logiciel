@@ -51,7 +51,7 @@ TEST_CASE ( "TP4_Carte::UsineInterface" ) {
 }
 
 //------------------------------------------------------------------------------------------------ 4
-/*TEST_CASE ( "TP4_Carte::UsineN" ) {
+TEST_CASE ( "TP4_Carte::UsineN" ) {
  const unsigned n = 32;
 
  UsineCarte usine(n);
@@ -63,10 +63,10 @@ TEST_CASE ( "TP4_Carte::UsineInterface" ) {
  }
 
  REQUIRE ( usine.getCarte() == nullptr );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 5
-/*TEST_CASE ( "TP4_Carte::PaquetRemplir" ) {
+TEST_CASE ( "TP4_Carte::PaquetRemplir" ) {
  const unsigned n = 27;
 
  paquet_t paquet;
@@ -77,7 +77,7 @@ TEST_CASE ( "TP4_Carte::UsineInterface" ) {
  for (unsigned i = 0; i<n; ++i) {
   REQUIRE ( paquet[i]->getValeur() == i );
  }
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 6
 /*TEST_CASE ( "TP4_Carte::PaquetFlux" ) {

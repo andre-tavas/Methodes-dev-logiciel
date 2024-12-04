@@ -8,8 +8,8 @@ class UsineCarte;
 class Carte{
 
     private:
-        int number;
-        Carte(int n);
+        unsigned number;
+        Carte(unsigned n);
         
         Carte(const Carte& c) = delete;
         Carte() = delete;
