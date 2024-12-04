@@ -4,6 +4,7 @@
 #include <vector>
 #include <cmath>
 #include <algorithm>
+#include <stdexcept>
 #include "valeur.hpp"
 
 class Echantillon{
@@ -19,16 +20,20 @@ class Echantillon{
         void ajouter(double n) {vector.push_back(Valeur(n)); }
 
         Valeur getMinimum() const {
-            return *std::min_element(vector.begin(), vector.end(),
-                            [](const Valeur& a, const Valeur& b){
-                                return a.getNombre() < b.getNombre();
-                            });
+            if(vector.size()){
+                return *std::min_element(vector.begin(), vector.end(),
+                                [](const Valeur& a, const Valeur& b){
+                                    return a.getNombre() < b.getNombre();
+                                });
+            } else throw std::domain_error("Empty vector has no min");
         }
         Valeur getMaximum() const {
-            return *std::max_element(vector.begin(), vector.end(),
-                            [](const Valeur& a, const Valeur& b){
-                                return a.getNombre() < b.getNombre();
-                            });
+            if(vector.size()){
+                return *std::max_element(vector.begin(), vector.end(),
+                                [](const Valeur& a, const Valeur& b){
+                                    return a.getNombre() < b.getNombre();
+                                });
+            } else throw std::domain_error("Empty vector has no max");
         }
 };
 
