@@ -27,6 +27,7 @@ class Classe{
         void ajouter() { quantite++; }
 
         friend bool operator<(const Classe& a, const Classe& b);
+        friend bool operator>(const Classe& a, const Classe& b);
         // friend bool operator==(const Classe& a, const Classe& b);
 
 };
@@ -35,12 +36,18 @@ bool operator<(const Classe& a, const Classe& b){
     return a.getBorneInf() < b.getBorneInf();
 }
 
+bool operator>(const Classe& a, const Classe& b){
+    return a.getBorneInf() > b.getBorneInf();
+}
+
 // bool operator==(const Classe& a, const Classe& b){
 //     return a.getBorneInf() == b.getBorneInf() && a.getBorneSup() == b.getBorneSup();
 // }
 
 template <typename COMPARATEUR = std::less<Classe>>
 class Histogramme{
+    using classes_t = std::set<Classe, COMPARATEUR>;
+
     private:
         double lb;
         double ub;
@@ -55,7 +62,7 @@ class Histogramme{
             }
         }
 
-        const std::set<Classe> getClasses() const { return classes; }
+        const std::set<Classe, COMPARATEUR> getClasses() const { return classes; }
 
         void ajouter(const Valeur& v) {
             const auto it = std::find_if(classes.begin(), classes.end(),

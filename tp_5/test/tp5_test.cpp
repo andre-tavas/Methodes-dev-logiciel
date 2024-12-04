@@ -227,7 +227,7 @@ TEST_CASE ( "TP5_Histogramme::Generique" ) {
 }
 
 //----------------------------------------------------------------------------------------------- 15
-/*TEST_CASE ( "TP5_Histogramme::FoncteurGreater" ) {
+TEST_CASE ( "TP5_Histogramme::FoncteurGreater" ) {
  using histo_t = Histogramme<std::greater<Classe>>;
 
  histo_t h(5.0,15.0,5);
@@ -245,7 +245,7 @@ TEST_CASE ( "TP5_Histogramme::Generique" ) {
   REQUIRE ( c.getBorneSup() == Approx(bornesSup[i]) );
   REQUIRE ( c.getQuantite() == 0u );
  }
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 16
 /*TEST_CASE ( "TP5_Histogramme::ComparateurQuantite" ) {
