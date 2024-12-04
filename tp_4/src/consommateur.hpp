@@ -11,9 +11,11 @@ class Consommateur{
     public:
         Consommateur(int b, std::shared_ptr<Ressource> r) : besoin(b), ressource(r) {}
         void puiser() { 
+            if (ressource){
             ressource->consommer(besoin);
-            if (!ressource->getStock()) ressource.reset(); //destroi ponteiro
+            if (!ressource->getStock()) ressource = nullptr; //destroi ponteiro
             }
+        }
 };
 
 #endif
