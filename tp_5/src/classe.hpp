@@ -10,7 +10,10 @@ class Classe{
     
     public:
         Classe(double lb = 0, double ub = 0) : lower_bound(lb), upper_bound(ub), quantite(0) {}
-
+        Classe(const Classe& c) 
+            : lower_bound(c.getBorneInf()), upper_bound(c.getBorneSup()), quantite(c.getQuantite())
+            {}
+            
         double getBorneInf() const { return lower_bound; }
         double getBorneSup() const { return upper_bound; }
         unsigned getQuantite() const { return quantite; }

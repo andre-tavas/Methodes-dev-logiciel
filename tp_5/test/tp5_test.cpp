@@ -274,7 +274,7 @@ TEST_CASE ( "TP5_Histogramme::ComparateurQuantite" ) {
 }
 
 //------------------------------------------------------------------------------------------------17
-/*TEST_CASE ( "TP5_Histogramme::Conversion" ) {
+TEST_CASE ( "TP5_Histogramme::Conversion" ) {
  using histo1_t = Histogramme<std::greater<Classe>>;
  using histo2_t = Histogramme<ComparateurQuantite>;
 
@@ -301,7 +301,7 @@ TEST_CASE ( "TP5_Histogramme::ComparateurQuantite" ) {
   REQUIRE ( c.getQuantite() == quantites[i] );
   ++i;
  }
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 18
 /*TEST_CASE ( "TP5_Etudiant::Constructeur" ) {
