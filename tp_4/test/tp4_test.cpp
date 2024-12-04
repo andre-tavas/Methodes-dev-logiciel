@@ -53,7 +53,7 @@ TEST_CASE ( "TP4_Carte::UsineInterface" ) {
 //------------------------------------------------------------------------------------------------ 4
 TEST_CASE ( "TP4_Carte::UsineN" ) {
  const unsigned n = 32;
-
+ 
  UsineCarte usine(n);
 
  for (unsigned i = 0; i<n; ++i) {

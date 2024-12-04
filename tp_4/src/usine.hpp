@@ -7,6 +7,20 @@
 
 class Carte;
 
+// template <typename T, int N>
+// class Usine{
+//     private: 
+//         unsigned current_element = 0;
+//         const unsigned number_elements;
+//         Usine(const Usine& u) = delete;
+//         Usine& operator=(const Usine& u) = delete;
+//     public:
+//         Usine(const unsigned n = N);
+//         std::unique_ptr<T> getT();
+// };
+
+// using UsineCarte = Usine<Carte, 52>;
+
 class UsineCarte{
     private:
         unsigned current_card = 0;

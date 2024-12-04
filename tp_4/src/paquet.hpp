@@ -2,6 +2,26 @@
 #define PAQUET_HPP
 
 #include "usine.hpp"
+#include <memory>
+#include <vector>
+
+// template <typename T>
+// class Paquet{
+//     std::vector<T> elements; 
+// };
+
+using paquet_t = std::vector<std::unique_ptr<Carte>>;
+
+template <typename T, typename U>
+void remplir(std::vector<std::unique_ptr<T>>& paquet, U& usine){
+    
+    // enquanto usina nao retornar ponteiro nulo, vai botando em paquet
+    while(true){
+        std::unique_ptr<T> element(usine.getCarte());
+        if (element == nullptr) break;
+        paquet.push_back(std::move(element));
+    }
+};
 
 
 #endif

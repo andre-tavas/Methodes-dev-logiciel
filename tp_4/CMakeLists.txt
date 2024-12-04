@@ -26,7 +26,7 @@ set ( PROJECT_HEADERS
 
 set ( PROJECT_SOURCES
       src/carte.cpp
-      #src/paquet.cpp
+      src/paquet.cpp
       #src/ressource.cpp
       src/usine.cpp
     )

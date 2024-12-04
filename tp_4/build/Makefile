@@ -205,6 +205,30 @@ src/carte.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/carte.cpp.s
 .PHONY : src/carte.cpp.s
 
+src/paquet.o: src/paquet.cpp.o
+.PHONY : src/paquet.o
+
+# target to build an object file
+src/paquet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/paquet.cpp.o
+.PHONY : src/paquet.cpp.o
+
+src/paquet.i: src/paquet.cpp.i
+.PHONY : src/paquet.i
+
+# target to preprocess a source file
+src/paquet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/paquet.cpp.i
+.PHONY : src/paquet.cpp.i
+
+src/paquet.s: src/paquet.cpp.s
+.PHONY : src/paquet.s
+
+# target to generate assembly for a file
+src/paquet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/paquet.cpp.s
+.PHONY : src/paquet.cpp.s
+
 src/usine.o: src/usine.cpp.o
 .PHONY : src/usine.o
 
@@ -341,6 +365,9 @@ help:
 	@echo "... src/carte.o"
 	@echo "... src/carte.i"
 	@echo "... src/carte.s"
+	@echo "... src/paquet.o"
+	@echo "... src/paquet.i"
+	@echo "... src/paquet.s"
 	@echo "... src/usine.o"
 	@echo "... src/usine.i"
 	@echo "... src/usine.s"
