@@ -165,7 +165,7 @@ TEST_CASE ( "TP5_Classe::Accesseurs" ) {
 }
 
 //----------------------------------------------------------------------------------------------- 12
-/*TEST_CASE ( "TP5_Histogramme::Constructeur" ) {
+TEST_CASE ( "TP5_Histogramme::Constructeur" ) {
  Histo h(5.0,15.0,5);
 
  double bornesInf[] = { 5.0, 7.0,  9.0, 11.0, 13.0 };
@@ -181,7 +181,7 @@ TEST_CASE ( "TP5_Classe::Accesseurs" ) {
   REQUIRE ( c.getQuantite() == 0u );
   ++i;
  }
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 13
 /*TEST_CASE ( "TP5_Histogramme::Echantillon" ) {
