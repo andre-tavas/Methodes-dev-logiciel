@@ -27,6 +27,7 @@ class Echantillon{
                                 });
             } else throw std::domain_error("Empty vector has no min");
         }
+
         Valeur getMaximum() const {
             if(vector.size()){
                 return *std::max_element(vector.begin(), vector.end(),
@@ -34,6 +35,11 @@ class Echantillon{
                                     return a.getNombre() < b.getNombre();
                                 });
             } else throw std::domain_error("Empty vector has no max");
+        }
+
+        Valeur getValeur(unsigned index) const {
+            if(index >= getTaille()) throw std::out_of_range("Index out of range");
+            return vector[index];
         }
 };
 
