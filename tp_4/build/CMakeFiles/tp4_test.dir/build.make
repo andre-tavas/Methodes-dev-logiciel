@@ -91,12 +91,14 @@ tp4_test_OBJECTS = \
 tp4_test_EXTERNAL_OBJECTS = \
 "/home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_4/build/CMakeFiles/common.dir/src/carte.cpp.o" \
 "/home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_4/build/CMakeFiles/common.dir/src/paquet.cpp.o" \
+"/home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_4/build/CMakeFiles/common.dir/src/ressource.cpp.o" \
 "/home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_4/build/CMakeFiles/common.dir/src/usine.cpp.o" \
 "/home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_4/build/CMakeFiles/test.dir/test/catch.cpp.o"
 
 tp4_test: CMakeFiles/tp4_test.dir/test/tp4_test.cpp.o
 tp4_test: CMakeFiles/common.dir/src/carte.cpp.o
 tp4_test: CMakeFiles/common.dir/src/paquet.cpp.o
+tp4_test: CMakeFiles/common.dir/src/ressource.cpp.o
 tp4_test: CMakeFiles/common.dir/src/usine.cpp.o
 tp4_test: CMakeFiles/test.dir/test/catch.cpp.o
 tp4_test: CMakeFiles/tp4_test.dir/build.make

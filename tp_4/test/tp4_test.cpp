@@ -5,7 +5,7 @@
 #include <type_traits>
 
 #include <paquet.hpp>
-//#include <consommateur.hpp>
+#include <consommateur.hpp>
 
 // Tests //-----------------------------------------------------------------------------------------
 
@@ -124,7 +124,7 @@ TEST_CASE ( "TP4_Carte::CarteDestruction" ) {
 }
 
 //------------------------------------------------------------------------------------------------ 8
-/*TEST_CASE ( "TP4_Conso::Ressource" ) {
+TEST_CASE ( "TP4_Conso::Ressource" ) {
  Ressource r(17);
 
  REQUIRE ( r.getStock() == 17 );
@@ -132,7 +132,7 @@ TEST_CASE ( "TP4_Carte::CarteDestruction" ) {
  r.consommer(6);
 
  REQUIRE ( r.getStock() == 11 );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 9
 /*TEST_CASE ( "TP4_Conso::Consommateur" ) {
