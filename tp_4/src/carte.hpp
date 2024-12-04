@@ -9,6 +9,8 @@ class Carte{
 
     private:
         unsigned number;
+        static unsigned compteur; 
+
         Carte(unsigned n);
         
         Carte(const Carte& c) = delete;
@@ -16,6 +18,8 @@ class Carte{
         Carte& operator=(const Carte& c) = delete;
     public:
         unsigned getValeur() const;
+        static unsigned getCompteur();
+        ~Carte();
 
         friend class UsineCarte;
 };

@@ -1,6 +1,9 @@
 #include "carte.hpp"
 
-Carte::Carte(unsigned nb) : number(nb) {}
+unsigned Carte::compteur = 0;
 
-unsigned Carte::getValeur() const { 
-    return number; }
+Carte::Carte(unsigned nb) : number(nb) {compteur++;}
+Carte::~Carte() { compteur--;}
+
+unsigned Carte::getValeur() const { return number; }
+unsigned Carte::getCompteur() { return compteur; }

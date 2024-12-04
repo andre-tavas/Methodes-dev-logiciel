@@ -100,7 +100,7 @@ TEST_CASE ( "TP4_Carte::PaquetFlux" ) {
 }
 
 //------------------------------------------------------------------------------------------------ 7
-/*TEST_CASE ( "TP4_Carte::CarteDestruction" ) {
+TEST_CASE ( "TP4_Carte::CarteDestruction" ) {
  REQUIRE ( Carte::getCompteur() == 0 );
 
  {
@@ -121,7 +121,7 @@ TEST_CASE ( "TP4_Carte::PaquetFlux" ) {
  }
 
  REQUIRE ( Carte::getCompteur() == 0 );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 8
 /*TEST_CASE ( "TP4_Conso::Ressource" ) {
