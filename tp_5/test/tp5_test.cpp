@@ -64,7 +64,7 @@ TEST_CASE ( "TP5_Echantillon::Ajout" ) {
 }
 
 //------------------------------------------------------------------------------------------------ 7
-/*TEST_CASE ( "TP5_Echantillon::MinMax" ) {
+TEST_CASE ( "TP5_Echantillon::MinMax" ) {
  Echantillon e;
 
  double v[] = { 5.0, 10.0, 15.0, 20.0 };
@@ -79,7 +79,7 @@ TEST_CASE ( "TP5_Echantillon::Ajout" ) {
 
  REQUIRE ( e.getMinimum().getNombre() == Approx(min) );
  REQUIRE ( e.getMaximum().getNombre() == Approx(max) );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 8
 /*TEST_CASE ( "TP5_Echantillon::MinMaxException" ) {
