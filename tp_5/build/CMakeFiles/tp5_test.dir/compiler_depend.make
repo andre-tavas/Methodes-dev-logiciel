@@ -268,8 +268,21 @@ CMakeFiles/tp5_test.dir/test/tp5_test.cpp.o: /home/local.isima.fr/antavaresg/sha
   /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_5/src/histogramme.hpp \
   /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_5/src/echantillon.hpp \
   /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_5/src/valeur.hpp \
+  /usr/include/c++/12/set \
+  /usr/include/c++/12/bits/stl_tree.h \
+  /usr/include/c++/12/bits/stl_set.h \
+  /usr/include/c++/12/bits/stl_multiset.h \
+  /usr/include/c++/12/iostream \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/bits/istream.tcc \
   /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_5/src/comparateur.hpp
 
+
+/usr/include/c++/12/istream:
+
+/usr/include/c++/12/bits/stl_multiset.h:
+
+/usr/include/c++/12/bits/stl_tree.h:
 
 /home/local.isima.fr/antavaresg/shared/ZZ3/C++/tp_5/src/valeur.hpp:
 
@@ -308,6 +321,8 @@ CMakeFiles/tp5_test.dir/test/tp5_test.cpp.o: /home/local.isima.fr/antavaresg/sha
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/c++/12/bits/range_access.h:
+
+/usr/include/c++/12/bits/stl_set.h:
 
 /usr/include/c++/12/bits/functexcept.h:
 
@@ -633,6 +648,8 @@ CMakeFiles/tp5_test.dir/test/tp5_test.cpp.o: /home/local.isima.fr/antavaresg/sha
 
 /usr/include/c++/12/typeinfo:
 
+/usr/include/c++/12/set:
+
 /usr/include/c++/12/bits/ios_base.h:
 
 /usr/include/x86_64-linux-gnu/c++/12/bits/gthr.h:
@@ -659,9 +676,13 @@ CMakeFiles/tp5_test.dir/test/tp5_test.cpp.o: /home/local.isima.fr/antavaresg/sha
 
 /usr/include/c++/12/bits/locale_facets.tcc:
 
+/usr/include/c++/12/bits/istream.tcc:
+
 /usr/include/asm-generic/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/c++/12/iostream:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
