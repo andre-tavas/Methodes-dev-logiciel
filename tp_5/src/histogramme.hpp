@@ -52,7 +52,7 @@ class Histogramme{
         double lb;
         double ub;
         double interval;
-        std::set<Classe, COMPARATEUR> classes;
+        classes_t classes;
 
     public:
         Histogramme(double l, double u, unsigned n) : lb(l), ub(u) {
@@ -62,7 +62,7 @@ class Histogramme{
             }
         }
 
-        const std::set<Classe, COMPARATEUR> getClasses() const { return classes; }
+        const classes_t getClasses() const { return classes; }
 
         void ajouter(const Valeur& v) {
             const auto it = std::find_if(classes.begin(), classes.end(),
